@@ -21,12 +21,12 @@ class App:
     gui: Window
     aio_loop: asyncio.AbstractEventLoop
     speaker: Speaker
-    events: list[ApiResponse]
 
     def __init__(self) -> None:
         """Initialize the app."""
         self.settings: Settings = Settings()
         self.settings.load_settings()
+        self.events: list[ApiResponse] = []
 
     async def run(self):
         """Run the application."""
