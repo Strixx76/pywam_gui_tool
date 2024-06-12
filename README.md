@@ -20,8 +20,8 @@ Clone the GitHub repository, and install the requirements.
 
 ## Contribute
 
-- Issue Tracker: https://github.com/Strixx76/pywam_api_gui/issues
-- Source Code: https://github.com/Strixx76/pywam_api_gui
+- Issue Tracker: https://github.com/Strixx76/pywam_gui_tool/issues
+- Source Code: https://github.com/Strixx76/pywam_gui_tool
 
 ## License
 
