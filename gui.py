@@ -13,7 +13,6 @@ from typing import TYPE_CHECKING
 
 from pywam.attributes import WamAttributes  # type: ignore
 from pywam.lib.api_response import ApiResponse  # type: ignore
-from pywam.speaker import Speaker  # type: ignore
 
 if TYPE_CHECKING:
     from app import App
@@ -247,7 +246,7 @@ class Properties(tk.Frame):
     def set_up_widgets(self) -> None:
         """Set up widgets."""
         # Populate treeview
-        ws = WamAttributes(Speaker("192.168.200.1"))
+        ws = WamAttributes()
         states = ws.get_state_copy()
         time_now = datetime.now().strftime("%H:%M:%S")
         for key, value in states.items():
